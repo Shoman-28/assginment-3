@@ -5,7 +5,7 @@
 function kilometerToMeter(kilometer){
 
     if(kilometer<0){
-        
+        //navigate value
         return "Distance can't be negative. Please Enter Possitive Value";
 
     }else{
@@ -15,7 +15,7 @@ function kilometerToMeter(kilometer){
     }
   
 }
-console.log(kilometerToMeter());
+console.log(kilometerToMeter(3));
 // kilometerToMeter== end 
 
 
@@ -32,8 +32,9 @@ function budgetCalculator( watch, phone, laptop){
 
     }
 }
-console.log(budgetCalculator());
+console.log(budgetCalculator(1,3,1));
 // budgetCalculator== end 
+
 
 //===hotelCost===== start
 function hotelCost(day){
@@ -41,30 +42,28 @@ function hotelCost(day){
     if(day < 0){
         return "please enter valid number"
 
-    }
-
-    else if(day <=10){
+    } else if(day <=10){
+        //====cost 1 to 10 day====
         totalCost = day * 100;
         return totalCost;
 
-    }
-
-    else if(day <=20){
+    } else if(day <=20){
+        //====cost 11 to 20 day====
         var day = day - 10;
         var cost2 = day * 80;
         var totalCost = cost2 + (10 * 100);
         return totalCost
-    }
 
-    else{
+    } else{
+        //====cost more then 20 day====
         day = day - 20;
         var cost3 = day * 50;
-        var totalCost = cost3 + (10 * 100) + (10 *50);
+        var totalCost = cost3 + (10 * 100) + (10 * 80);
         return totalCost;
     }    
 
 }
-console.log(hotelCost());
+console.log(hotelCost(42));
 
 //===hotelCost===== end
 
@@ -87,9 +86,9 @@ function megaFriend(name){
 }
 var name = ["shoman", "nobodip", "abdul", "hamid", "bangladesh", "jahid", 'moni'];
 
-console.log(megaFriend());
+console.log(megaFriend(name));
 
- //===magaFriend=====start
+ //===magaFriend=====end
 
 
 
